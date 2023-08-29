@@ -165,3 +165,23 @@ a {
     font-size: 15px;
     line-height: 1.5;
 }
+
+@media screen and (max-width: 400px) {
+    .rating-item,
+    .thanks-item {
+        width: 375px;
+    }
+    .rating-item .container,
+    .thanks-item .container {
+    width: 330px; 
+}
+.rating-item .container {
+    padding: 30px 10px;
+}
+.thanks-item .container {
+    padding: 40px 12px;
+}
+.rating-item .rating-list li {
+    margin-right: 5px;
+}
+}
