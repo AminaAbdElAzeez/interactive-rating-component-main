@@ -1,0 +1,167 @@
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+}
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 14%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+    --blue: hsl(213, 19%, 23%);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Rating Section */
+.rating-item,
+.thanks-item {
+    height: 100vh;
+    background-color: var(--veryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thanks-item {
+    text-align: center;
+    display: none;
+}
+.rating-item .container,
+.thanks-item .container {
+    width: 385px;
+    background-color: var(--darkBlue);
+    border-radius: 28px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+}
+.rating-item .container {
+    padding: 30px 20px;
+}
+.thanks-item .container {
+    padding: 40px 22px;
+}
+.rating-item .container .icon {
+    background-color: var(--blue);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.rating-item .rating-title {
+    color: var(--white);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.rating-item .rating-title + p {
+    color: var(--mediumGrey);
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+.rating-item .rating-list li {
+    color: var(--mediumGrey);
+    font-weight: 300;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height:45px ;
+    margin: 0 10px 30px 8px;
+    text-align: center;
+    background-color: var(--blue);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s , color 0.5s;
+    -webkit-transition: background-color 0.5s , color 0.5s;
+    -moz-transition: background-color 0.5s , color 0.5s;
+    -ms-transition: background-color 0.5s , color 0.5s;
+    -o-transition: background-color 0.5s , color 0.5s;
+}
+.rating-item .rating-list li:hover,
+.rating-item .rating-list li:active {
+    color: var(--white);
+}
+.rating-item .rating-list li:hover {
+    background-color: var(--orange);
+}
+.rating-item .rating-list li:active {
+    background-color: var(--mediumGrey);
+}
+.rating-item .rating-link {
+    background-color: var(--orange);
+    display: block;
+    width: 95%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--white);
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: auto;
+    border-radius: 28px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    -ms-border-radius: 28px;
+    -o-border-radius: 28px;
+    transition: color 0.5s , background-color 0.5s;
+    -webkit-transition: color 0.5s , background-color 0.5s;
+    -moz-transition: color 0.5s , background-color 0.5s;
+    -ms-transition: color 0.5s , background-color 0.5s;
+    -o-transition: color 0.5s , background-color 0.5s;
+}
+.rating-item .rating-link:hover {
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+/* Thanks Section */
+.thanks-item-img {
+    margin-bottom: 25px;
+}
+.thanks-item-img + span {
+    color: var(--orange);
+    background-color: var(--blue);
+    display: block;
+    width: 200px;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 0 auto 30px auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.thanks-title {
+    color: var(--white);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.thanks-desc {
+    color: var(--mediumGrey);
+    font-size: 15px;
+    line-height: 1.5;
+}
